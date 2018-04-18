@@ -57,6 +57,14 @@ public class UsersController {
  
         return map;
     }
+    
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public ModelAndView test(Users users) {
+    	ModelAndView view = new ModelAndView("test");
+        
+ 
+        return view;
+    }
  
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     public @ResponseBody Map<String, Object> delete(Users users) {

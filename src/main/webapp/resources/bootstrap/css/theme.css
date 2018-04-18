@@ -48,3 +48,7 @@ a {
 nav {
 	margin: 5px;
 }
+
+.btn-outline-warning{
+	border-color:#ffc1079e !important;
+}

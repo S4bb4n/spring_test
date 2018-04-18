@@ -12,8 +12,7 @@
 <link
 	href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />"
 	rel="stylesheet">
-<link
-	href="<c:url value="/resources/bootstrap/css/theme.css" />"
+<link href="<c:url value="/resources/bootstrap/css/theme.css" />"
 	rel="stylesheet">
 <script
 	src="<c:url value="/resources/bootstrap/scripts/jquery.min.js" />"></script>
@@ -23,9 +22,35 @@
 <script
 	src="<c:url value="/resources/bootstrap/scripts/bootstrap.min.js" />"></script>
 
-<style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('a').on('click', function(e) {
+			e.preventDefault();
+			var pageRef = $(this).attr('href');
 
-</style>
+			callPage(pageRef);
+
+		});
+
+		function callPage(page) {
+			$.ajax({
+				url : page,
+				type : "GET",
+				dataType : "text",
+				success : function(response) {
+					console.log("page loaded", response);
+					$('.content').html(response);
+				},
+				error : function(error) {
+					console.log("page not loaded", error);
+				},
+				complete : function(xhr, status) {
+					console.log("The request is complete");
+				}
+			});
+		}
+	});
+</script>
 </head>
 <body onload="load();" class="bg-dark ">
 
@@ -51,14 +76,18 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active"><a class="nav-link text-success" href="#">Home
-									<span class="sr-only">(current)</span>
+							<li class="nav-item active"><a class="nav-link text-success"
+								href="index">Home <span class="sr-only">(current)</span>
 							</a></li>
-							<li class="nav-item"><a class="nav-link text-success" href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success" href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success" href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success" href="#">Link</a></li>
-							
+							<li class="nav-item"><a class="nav-link text-success"
+								href="page">Link</a></li>
+							<li class="nav-item"><a class="nav-link text-success"
+								href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link text-success"
+								href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link text-success"
+								href="#">Link</a></li>
+
 						</ul>
 						<!-- <form class="form-inline my-2 my-lg-0">
 							<input class="form-control mr-sm-2" type="search"
@@ -84,14 +113,18 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent2">
 						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active"><a class="nav-link text-success" href="#">Home
-									<span class="sr-only">(current)</span>
+							<li class="nav-item active"><a class="nav-link text-success"
+								href="#">Home <span class="sr-only">(current)</span>
 							</a></li>
-							<li class="nav-item"><a class="nav-link text-success" href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success" href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success" href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success" href="#">Link</a></li>
-							
+							<li class="nav-item"><a class="nav-link text-success"
+								href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link text-success"
+								href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link text-success"
+								href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link text-success"
+								href="#">Link</a></li>
+
 						</ul>
 						<!-- <form class="form-inline my-2 my-lg-0">
 							<input class="form-control mr-sm-2" type="search"
@@ -103,7 +136,7 @@
 				</nav>
 			</div>
 			<br>
-			<div class="form-control  text-white bg-dark col-sm-9 col-lg-9 ">
+			<div class="form-control  text-white bg-dark col-sm-9 col-lg-9 content">
 
 				<div class="form-group">
 					<input type="hidden" id="user_id"> <label for="name"
