@@ -1,0 +1,50 @@
+html * {
+	font-size: 12px !important;
+}
+
+.text-success {
+	color: #ffc107a3 !important;
+}
+
+.well {
+	background-color: transparent];
+}
+
+.form-control {
+	padding-left: 10px;
+	border-color: #63b17545 !important;
+}
+
+.lemonText{
+	color:#63b175de !important;
+}
+
+div {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 5px;
+}
+
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ffc107a3;
+	border-top: none;
+}
+
+.table td, .table th {
+	padding: .75rem;
+	vertical-align: top;
+	border-top: 1px solid #63b17545;
+}
+
+.table td {
+	color: #63b175de;
+}
+
+a {
+	color: #7cb2ea
+}
+
+nav {
+	margin: 5px;
+}
