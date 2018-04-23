@@ -20,7 +20,8 @@ public class UsersController {
  
     @Autowired
     UsersService userServices;
- 
+   
+       
     @RequestMapping(value = "/page", method = RequestMethod.GET)
     public ModelAndView getPage() {
         ModelAndView view = new ModelAndView("users");
@@ -58,13 +59,7 @@ public class UsersController {
         return map;
     }
     
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public ModelAndView test(Users users) {
-    	ModelAndView view = new ModelAndView("test");
-        
- 
-        return view;
-    }
+    
  
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     public @ResponseBody Map<String, Object> delete(Users users) {

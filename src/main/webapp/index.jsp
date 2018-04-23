@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>
-    <c:redirect url="users/page"/>
+   
         <a href="users/page">Click to go CRUD Operations Page</a>
         
     </h2>
