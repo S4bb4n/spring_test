@@ -22,7 +22,7 @@ public class UsersController {
     UsersService userServices;
    
        
-    @RequestMapping(value = "/page", method = RequestMethod.GET)
+    @RequestMapping(value = {"","/page"}, method = RequestMethod.GET)
     public ModelAndView getPage() {
         ModelAndView view = new ModelAndView("users");
         return view;

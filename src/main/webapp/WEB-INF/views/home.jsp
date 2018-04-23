@@ -28,9 +28,10 @@
 		$('a').on('click', function(e) {
 			e.preventDefault();
 			var pageRef = $(this).attr('href');
-			if (!$(this).find('.navbar-brand')){
-				callPage(pageRef);	
+			if (!$(this).hasClass("navbar-brand")){
+				callPage(pageRef);
 			}
+			
 
 		});
 
@@ -79,7 +80,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active"><a class="nav-link text-success"
-								href="home/index">Users<span class="sr-only">(current)</span>
+								href="../users">Users<span class="sr-only">(current)</span>
 							</a></li>
 							<li class="nav-item"><a class="nav-link text-success"
 								href="#">Link</a></li>
@@ -137,7 +138,8 @@
 					</div>
 				</nav>
 			</div>
-			<div class="form-control  text-white bg-dark col-sm-9 col-lg-9 content">
+			<!--  de verficat on load pe div -->
+			<div class="form-control  text-white bg-dark col-sm-9 col-lg-9 content" onload="load();">
 				<p>test</p>
 			</div>
 		</div>

@@ -6,7 +6,7 @@
 <body>
     <h2>
    
-        <a href="users/page">Click to go CRUD Operations Page</a>
+        <a href="home/">Click to go CRUD Operations Page</a>
         
     </h2>
 </body>

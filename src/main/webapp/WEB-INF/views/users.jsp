@@ -36,7 +36,7 @@
 		submit = function() {
 
 			$.ajax({
-				url : 'saveOrUpdate',
+				url : '../users/saveOrUpdate',
 				type : 'POST',
 				data : {
 					user_id : $("#user_id").val(),
@@ -53,7 +53,7 @@
 
 		delete_ = function(id) {
 			$.ajax({
-				url : 'delete',
+				url : '../users/delete',
 				type : 'POST',
 				data : {
 					user_id : id
@@ -75,7 +75,7 @@
 		load = function() {
 			$
 					.ajax({
-						url : 'list',
+						url : '../users/list',
 						type : 'POST',
 						success : function(response) {
 							data = response.data;
