@@ -11,7 +11,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
 	public ModelAndView test() {
-		ModelAndView view = new ModelAndView("home");
+		ModelAndView view = new ModelAndView("index");
 
 		return view;
 	}

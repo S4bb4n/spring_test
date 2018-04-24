@@ -28,9 +28,9 @@
 		$('a').on('click', function(e) {
 			e.preventDefault();
 			var pageRef = $(this).attr('href');
-			if (!$(this).hasClass("navbar-brand")){
+			//if (!$(this).hasClass("navbar-brand")){
 				callPage(pageRef);
-			}
+			//}
 			
 
 		});
@@ -69,7 +69,7 @@
 
 					<!-- normal collapsible navbar markup -->
 
-					<a class="navbar-brand lemonText" href="#">Menu 1</a>
+					<a class="navbar-brand lemonText" href="index">Menu 1</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent"
 						aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -139,7 +139,7 @@
 				</nav>
 			</div>
 			<!--  de verficat on load pe div -->
-			<div class="form-control  text-white bg-dark col-sm-9 col-lg-9 content" onload="load();">
+			<div class="form-control  text-white bg-dark col-sm-9 col-lg-9 content">
 				<p>test</p>
 			</div>
 		</div>

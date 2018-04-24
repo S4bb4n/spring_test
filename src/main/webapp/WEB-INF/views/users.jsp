@@ -32,6 +32,9 @@
 
 
 	<script type="text/javascript">
+	
+	
+	
 		data = "";
 		submit = function() {
 
@@ -99,4 +102,8 @@
 					});
 
 		}
+		
+		$(document).ready(function(){
+			load();
+		});
 	</script>
