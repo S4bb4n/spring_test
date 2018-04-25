@@ -9,11 +9,20 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("home")
 public class HomeController {
 
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
-	public ModelAndView test() {
-		ModelAndView view = new ModelAndView("index");
+	@RequestMapping(value = "/menu1", method = RequestMethod.GET)
+	public String getMenu1() {
+//		ModelAndView view = new ModelAndView("index");
 
-		return view;
+//		return view;
+		return "menu1";
+	}
+	
+	@RequestMapping(value = "/menu2", method = RequestMethod.GET)
+	public String getMenu2() {
+//		ModelAndView view = new ModelAndView("index");
+
+//		return view;
+		return "menu2";
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)

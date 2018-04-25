@@ -69,7 +69,7 @@
 
 					<!-- normal collapsible navbar markup -->
 
-					<a class="navbar-brand lemonText" href="index">Menu 1</a>
+					<a class="navbar-brand lemonText" href="menu1">Menu 1</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent"
 						aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -83,13 +83,8 @@
 								href="../users">Users<span class="sr-only">(current)</span>
 							</a></li>
 							<li class="nav-item"><a class="nav-link text-success"
-								href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success"
-								href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success"
-								href="#">Link</a></li>
-							<li class="nav-item"><a class="nav-link text-success"
-								href="#">Link</a></li>
+								href="../asp">Asp</a></li>
+							
 
 						</ul>
 						<!-- <form class="form-inline my-2 my-lg-0">
@@ -106,7 +101,7 @@
 
 					<!-- normal collapsible navbar markup -->
 
-					<a class="navbar-brand lemonText" href="#">Menu 2</a>
+					<a class="navbar-brand lemonText" href="menu2">Menu 2</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent2"
 						aria-controls="navbarSupportedContent2" aria-expanded="false"
