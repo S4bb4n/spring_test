@@ -52,3 +52,8 @@ nav {
 .btn-outline-warning{
 	border-color:#ffc1079e !important;
 }
+
+
+.opac{
+	opacity: 0.5;
+}

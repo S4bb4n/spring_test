@@ -69,7 +69,7 @@
 
 					<!-- normal collapsible navbar markup -->
 
-					<a class="navbar-brand lemonText" href="menu1">Menu 1</a>
+					<a class="navbar-brand lemonText" href="home/menu1">Menu 1</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent"
 						aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -79,12 +79,11 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active"><a class="nav-link text-success"
-								href="../users">Users<span class="sr-only">(current)</span>
-							</a></li>
-							<li class="nav-item"><a class="nav-link text-success"
-								href="../asp">Asp</a></li>
 							
+							<li class="nav-item"><a class="nav-link text-success"
+								href="asp">Asp</a></li>
+							<li class="nav-item"><a class="nav-link text-success"
+								href="users">Users</a></li>
 
 						</ul>
 						<!-- <form class="form-inline my-2 my-lg-0">
@@ -133,7 +132,7 @@
 					</div>
 				</nav>
 			</div>
-			<!--  de verficat on load pe div -->
+			
 			<div class="form-control  text-white bg-dark col-sm-9 col-lg-9 content">
 				<p>test</p>
 			</div>

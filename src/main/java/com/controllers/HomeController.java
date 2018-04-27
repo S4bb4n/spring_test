@@ -25,7 +25,7 @@ public class HomeController {
 		return "menu2";
 	}
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "", method = RequestMethod.GET)
 	public ModelAndView getHome() {
 		ModelAndView view = new ModelAndView("home");
 		return view;
