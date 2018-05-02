@@ -100,7 +100,7 @@
 
 					<!-- normal collapsible navbar markup -->
 
-					<a class="navbar-brand lemonText" href="menu2">Menu 2</a>
+					<a class="navbar-brand lemonText" href="home/menu2">Menu 2</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent2"
 						aria-controls="navbarSupportedContent2" aria-expanded="false"
