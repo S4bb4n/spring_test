@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h4>Test</h4>
+<h4>Admin menu</h4>
+<p>
+- Se inserreaza sectiunile si campurile aferente
+- Fiecare sectiune contine numele campului si valoarea acestuia
+- links: lista sectiune, creare noua  sectiune ecc..
+
+</p>
 </body>
 </html>

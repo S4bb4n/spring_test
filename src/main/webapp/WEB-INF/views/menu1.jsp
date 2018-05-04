@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h4>Welcome to menu 1 .... </h4>
+<h4>User menu</h4>
+<p>
+- Despartit in sectiuni
+- Fiecare camp conmtine un submit 
+- Fiecare schimbare se face imediat 
+- In final buton de submit pentru creeare fisier
+</p>
 </body>
 </html>
