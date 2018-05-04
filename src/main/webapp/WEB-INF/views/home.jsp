@@ -100,7 +100,7 @@
 
 					<!-- normal collapsible navbar markup -->
 
-					<a class="navbar-brand lemonText" href="home/menu2">Menu 2</a>
+					<a class="navbar-brand lemonText" href="home/menu2">Admin Menu</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent2"
 						aria-controls="navbarSupportedContent2" aria-expanded="false"
@@ -111,7 +111,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent2">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active"><a class="nav-link text-success"
-								href="#">Home <span class="sr-only">(current)</span>
+								href="functions">Save/Update functions <span class="sr-only">(current)</span>
 							</a></li>
 							<li class="nav-item"><a class="nav-link text-success"
 								href="#">Link</a></li>

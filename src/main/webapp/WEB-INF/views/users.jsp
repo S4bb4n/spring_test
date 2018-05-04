@@ -46,8 +46,8 @@
 					user_name : $('#name').val(),
 					email : $('#email').val()
 				},
-				success : function(response) {
-					//alert(response.message);
+				success : function(response) { 
+					alert(response.message);
 					load();
 				}
 			});
