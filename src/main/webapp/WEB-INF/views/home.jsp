@@ -100,11 +100,11 @@
 
 					<!-- normal collapsible navbar markup -->
 
-<<<<<<< HEAD
+
 					<a class="navbar-brand lemonText" href="home/menu2">Admin Menu</a>
-=======
-					<a class="navbar-brand lemonText" href="home/menu2">Menu 2</a>
->>>>>>> refs/remotes/origin/spaMenu
+
+					
+
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent2"
 						aria-controls="navbarSupportedContent2" aria-expanded="false"
