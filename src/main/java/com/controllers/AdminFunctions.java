@@ -1,6 +1,7 @@
 package com.controllers;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,16 +28,34 @@ public class AdminFunctions {
 	@RequestMapping(value = "/saveOrUpdate", method = RequestMethod.POST)
 	public @ResponseBody Map<String, Object> writeIntoFunctions(Functions functions) {
 
-		Map<String, Object> map = new HashMap<String,Object>();
+		Map<String, Object> map = new HashMap<String, Object>();
 		System.out.println(functions.toString());
 		if (functionsService.saveOrUpdate(functions)) {
 			map.put("status", "200");
 			map.put("message", "Record saved successfully!");
-		} else {
-			map.put("status", "403");
-			map.put("message", "Record not saved!");
 		}
+		// else {
+		// map.put("status", "403");
+		// map.put("message", "Record not saved!");
+		// }
 
+		return map;
+	}
+
+	@RequestMapping(value = "/list",method = RequestMethod.POST)
+	public @ResponseBody Map<String, Object> getAll(Functions functions) {
+		Map<String, Object> map = new HashMap<>();
+		List<Functions> list = functionsService.list();
+
+		if (list != null) {
+			map.put("status", "200");
+			map.put("message", "Data found");
+			map.put("data", list);
+		} else {
+			map.put("status", "404");
+			map.put("message", "Data not found");
+
+		}
 		return map;
 	}
 

@@ -82,6 +82,11 @@
 						type : 'POST',
 						success : function(response) {
 							data = response.data;
+							if(data.length > 0) {
+								$("#table").show();
+							}else{
+								$("#table").hide();
+							}
 							$('.tr').remove();
 							for (i = 0; i < response.data.length; i++) {
 								$("#table")

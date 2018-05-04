@@ -23,8 +23,8 @@ public class FunctionsServiceImpl implements FunctionsService{
 
 	@Override
 	public List<Functions> list() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return functionsDao.list();
 	}
 
 	@Override
