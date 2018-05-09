@@ -19,7 +19,7 @@
 		
 			<div class="form-group">
 				<div class="row text-warning">Section 1</div>
-				<div class="row">	
+				<div class="row bg-row-transparent">	
 					<div class="col-3">			
 						<label
 							class="text-success" 
@@ -86,7 +86,7 @@
 					
 				</div>	
 				<div class="row text-warning">Section 2	</div>
-				<div class="row">	
+				<div class="row bg-row-transparent">	
 					<div class="col-3">			
 						<label
 							class="text-success" 
@@ -154,7 +154,7 @@
 				</div>	
 				
 				<div class="row text-warning">Section 3</div>
-				<div class="row">	
+				<div class="row bg-row-transparent">	
 					<div class="col-3">			
 						<label
 							class="text-success" 
@@ -222,7 +222,7 @@
 				</div>	
 				
 				<div class="row text-warning">Section 4</div>
-				<div class="row">	
+				<div class="row bg-row-transparent">	
 					<div class="col-3">			
 						<label
 							class="text-success" 

@@ -1,9 +1,18 @@
 html * {
 	font-size: 12px !important;
+	
+}
+
+p{
+	font-color: #d4a415;
+}
+
+.bg-row-transparent{
+	background-color: #3a483d!important;	
 }
 
 .text-success {
-	color: #ffc107a3 !important;
+	color: #d4a415 !important;
 }
 
 .well {
@@ -12,11 +21,11 @@ html * {
 
 .form-control {
 	padding-left: 10px;
-	border-color: #63b17545 !important;
+	border-color: #2e4c27 !important;
 }
 
 .lemonText{
-	color:#63b175de !important;
+	color:#5f986c !important;
 }
 
 div {
@@ -27,18 +36,18 @@ div {
 
 .table thead th {
 	vertical-align: bottom;
-	border-bottom: 2px solid #ffc107a3;
+	border-bottom: 2px solid #d4a415;
 	border-top: none;
 }
 
 .table td, .table th {
 	padding: .75rem;
 	vertical-align: top;
-	border-top: 1px solid #63b17545;
+	border-top: 1px solid #2e4c27;
 }
 
 .table td {
-	color: #63b175de;
+	color: #5f986c;
 }
 
 a {
