@@ -34,10 +34,10 @@ public class AdminFunctions {
 			map.put("status", "200");
 			map.put("message", "Record saved successfully!");
 		}
-		// else {
-		// map.put("status", "403");
-		// map.put("message", "Record not saved!");
-		// }
+		 else {
+		 map.put("status", "403");
+		 map.put("message", "Record not saved!");
+		 }
 
 		return map;
 	}
@@ -56,6 +56,18 @@ public class AdminFunctions {
 			map.put("message", "Data not found");
 
 		}
+		return map;
+	}
+	
+	@RequestMapping(value="/delete",method=RequestMethod.POST)
+	public @ResponseBody Map<String,Object> delete(Functions functions){
+		Map<String,Object> map = new HashMap<>();
+		
+		if (functionsService.delete(functions)) {
+			map.put("status","200");
+			map.put("message", "Record deleted successfully!");			
+		}
+		
 		return map;
 	}
 

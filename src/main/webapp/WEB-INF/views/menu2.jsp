@@ -9,9 +9,9 @@
 <body>
 <h4>Admin menu</h4>
 <p>
-- Se inserreaza sectiunile si campurile aferente
-- Fiecare sectiune contine numele campului si valoarea acestuia
-- links: lista sectiune, creare noua  sectiune ecc..
+- Se inserreaza sectiunile si campurile aferente <br>
+- Fiecare sectiune contine numele campului si valoarea acestuia<br>
+- links: lista sectiune, creare noua  sectiune ecc..<br>
 
 </p>
 </body>

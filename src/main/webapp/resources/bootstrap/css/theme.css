@@ -1,10 +1,11 @@
 html * {
+	font-family: monospace;
 	font-size: 12px !important;
 	
 }
 
 p{
-	font-color: #d4a415;
+	color: antiquewhite !important;	
 }
 
 .bg-row-transparent{
@@ -12,7 +13,7 @@ p{
 }
 
 .text-success {
-	color: #d4a415 !important;
+	color: #83b18d !important;
 }
 
 .well {
@@ -21,11 +22,11 @@ p{
 
 .form-control {
 	padding-left: 10px;
-	border-color: #2e4c27 !important;
+	border-color: #538448 !important;
 }
 
 .lemonText{
-	color:#5f986c !important;
+	color:#83b18d!important;
 }
 
 div {
@@ -36,7 +37,7 @@ div {
 
 .table thead th {
 	vertical-align: bottom;
-	border-bottom: 2px solid #d4a415;
+	border-bottom: 2px solid #2e4c27;
 	border-top: none;
 }
 

@@ -9,10 +9,10 @@
 <body>
 <h4>User menu</h4>
 <p>
-- Despartit in sectiuni
-- Fiecare camp conmtine un submit 
-- Fiecare schimbare se face imediat 
-- In final buton de submit pentru creeare fisier
+- Despartit in sectiuni <br>
+- Fiecare camp conmtine un submit<br> 
+- Fiecare schimbare se face imediat <br>
+- In final buton de submit pentru creeare fisier<br>
 </p>
 </body>
 </html>

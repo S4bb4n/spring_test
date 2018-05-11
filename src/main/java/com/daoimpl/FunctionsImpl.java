@@ -31,7 +31,11 @@ public class FunctionsImpl implements FunctionsDao {
 			if (!dir.exists()) {
 				dir.mkdir();
 			}
-			mapper.writeValue(file, functions);
+			if (!file.exists()) {
+				mapper.writeValue(file, functions);
+			}else {
+				return false;
+			}
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();
 			return false;
@@ -76,7 +80,13 @@ public class FunctionsImpl implements FunctionsDao {
 
 	@Override
 	public boolean delete(Functions functions) {
-		// TODO Auto-generated method stub
+		File file = new File("jsonFunctions/"+functions.getFunctionName()+"_function.json");
+		
+		if(file.delete()) {
+//			System.out.println("File: " + file.getAbsolutePath()+" exist and will be deleted");
+			return true;
+		}
+			
 		return false;
 	}
 

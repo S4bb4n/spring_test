@@ -3,19 +3,19 @@ package com.entities;
 public class Functions {
 
 	
-	int id;
+//	int id;
 	
 	String functionName;
 	
 	String textFunction;
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
+//	public int getId() {
+//		return id;
+//	}
+//
+//	public void setId(int id) {
+//		this.id = id;
+//	}
 
 	public String getFunctionName() {
 		return functionName;
@@ -35,8 +35,13 @@ public class Functions {
 
 	@Override
 	public String toString() {
-		return "Functions [id=" + id + ", functionName=" + functionName + ", textFunction=" + textFunction + "]";
+		return "Functions [functionName=" + functionName + ", textFunction=" + textFunction + "]";
 	}
+
+	/*@Override
+	public String toString() {
+		return "Functions [id=" + id + ", functionName=" + functionName + ", textFunction=" + textFunction + "]";
+	}*/
 	
 	
 	

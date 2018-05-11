@@ -29,8 +29,8 @@ public class FunctionsServiceImpl implements FunctionsService{
 
 	@Override
 	public boolean delete(Functions functions) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return functionsDao.delete(functions);
 	}
 	
 	

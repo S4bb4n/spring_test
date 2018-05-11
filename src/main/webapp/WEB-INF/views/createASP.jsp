@@ -31,7 +31,7 @@
 							id="<%=modulo%>" 
 							required="required" 
 							name="<%=modulo%>"
-							class="form-control  text-white bg-dark"
+							class="form-control  text-warning bg-dark"
 							placeholder="inserisci nome modulo" 
 						/> 
 					</div>
@@ -39,7 +39,7 @@
 						<label 
 							for="<%=varbanca%>"
 							class="text-success">Var Banca</label>
-						<select id = "<%=varbanca%>" class="	form-control text-white bg-dark">
+						<select id = "<%=varbanca%>" class="	form-control text-warning bg-dark">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -51,7 +51,7 @@
 							class="text-success">
 							Check Browser
 						</label>
-						<select id = "<%=checkBrowser%>" class="form-control text-white bg-dark ">
+						<select id = "<%=checkBrowser%>" class="form-control text-warning bg-dark ">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -68,7 +68,7 @@
 							name="<%=formatData%>"
 							type="text"
 							placeholder="dd/mm/yyyy"
-							class="form-control  text-white bg-dark" 
+							class="form-control  text-warning bg-dark" 
 						/>
 					</div>
 					<div class="col-2 dropdown">
@@ -77,7 +77,7 @@
 							class="text-success">
 							B10 ?
 						</label>
-						<select id = "<%=b10%>" class="	form-control text-white bg-dark">
+						<select id = "<%=b10%>" class="	form-control text-warning bg-dark">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -98,7 +98,7 @@
 							id="modulo" 
 							required="required" 
 							name="modulo"
-							class="form-control  text-white bg-dark"
+							class="form-control  text-warning bg-dark"
 							placeholder="inserisci nome modulo" 
 						/> 
 					</div>
@@ -106,7 +106,7 @@
 						<label 
 							for="varbanca"
 							class="text-success">Var Banca</label>
-						<select id = "varbanca" class="	form-control text-white bg-dark">
+						<select id = "varbanca" class="	form-control text-warning bg-dark">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -118,7 +118,7 @@
 							class="text-success">
 							Check Browser
 						</label>
-						<select id = "checkBrowser" class="form-control text-white bg-dark ">
+						<select id = "checkBrowser" class="form-control text-warning bg-dark ">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -135,7 +135,7 @@
 							name="formatData"
 							type="text"
 							placeholder="dd/mm/yyyy"
-							class="form-control  text-white bg-dark" 
+							class="form-control  text-warning bg-dark" 
 						/>
 					</div>
 					<div class="col-2 dropdown">
@@ -144,7 +144,7 @@
 							class="text-success">
 							B10 ?
 						</label>
-						<select id = "b10" class="	form-control text-white bg-dark">
+						<select id = "b10" class="	form-control text-warning bg-dark">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -166,7 +166,7 @@
 							id="modulo" 
 							required="required" 
 							name="modulo"
-							class="form-control  text-white bg-dark"
+							class="form-control  text-warning bg-dark"
 							placeholder="inserisci nome modulo" 
 						/> 
 					</div>
@@ -174,7 +174,7 @@
 						<label 
 							for="varbanca"
 							class="text-success">Var Banca</label>
-						<select id = "varbanca" class="	form-control text-white bg-dark">
+						<select id = "varbanca" class="	form-control text-warning bg-dark">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -186,7 +186,7 @@
 							class="text-success">
 							Check Browser
 						</label>
-						<select id = "checkBrowser" class="form-control text-white bg-dark ">
+						<select id = "checkBrowser" class="form-control text-warning bg-dark ">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -203,7 +203,7 @@
 							name="formatData"
 							type="text"
 							placeholder="dd/mm/yyyy"
-							class="form-control  text-white bg-dark" 
+							class="form-control  text-warning bg-dark" 
 						/>
 					</div>
 					<div class="col-2 dropdown">
@@ -212,7 +212,7 @@
 							class="text-success">
 							B10 ?
 						</label>
-						<select id = "b10" class="	form-control text-white bg-dark">
+						<select id = "b10" class="	form-control text-warning bg-dark">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -234,7 +234,7 @@
 							id="modulo" 
 							required="required" 
 							name="modulo"
-							class="form-control  text-white bg-dark"
+							class="form-control  text-warning bg-dark"
 							placeholder="inserisci nome modulo" 
 						/> 
 					</div>
@@ -242,7 +242,7 @@
 						<label 
 							for="varbanca"
 							class="text-success">Var Banca</label>
-						<select id = "varbanca" class="	form-control text-white bg-dark">
+						<select id = "varbanca" class="	form-control text-warning bg-dark">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -254,7 +254,7 @@
 							class="text-success">
 							Check Browser
 						</label>
-						<select id = "checkBrowser" class="form-control text-white bg-dark ">
+						<select id = "checkBrowser" class="form-control text-warning bg-dark ">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
@@ -271,7 +271,7 @@
 							name="formatData"
 							type="text"
 							placeholder="dd/mm/yyyy"
-							class="form-control  text-white bg-dark" 
+							class="form-control  text-warning bg-dark" 
 						/>
 					</div>
 					<div class="col-2 dropdown">
@@ -280,7 +280,7 @@
 							class="text-success">
 							B10 ?
 						</label>
-						<select id = "b10" class="	form-control text-white bg-dark">
+						<select id = "b10" class="	form-control text-warning bg-dark">
 							<option value="">---</option>
 							<option value="SI">SI</option>
 							<option value="NO">NO</option>
