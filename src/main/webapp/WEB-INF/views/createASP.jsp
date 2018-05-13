@@ -85,7 +85,7 @@
 					</div>		  
 					
 				</div>	
-				<div class="row text-warning">Section 2	</div>
+				<!-- <div class="row text-warning">Section 2	</div>
 				<div class="row bg-row-transparent">	
 					<div class="col-3">			
 						<label
@@ -288,81 +288,50 @@
 					</div>		  
 					
 				</div>	
-				
-				<div class="row text-warning">Section 4</div>
-				<div class="row bg-secondary" style="opacity:0.5;">
-					test
-				</div>	
-				
-			
-			</div>
-			
-			
-			
-			<!-- <div class="form-group">
-				<label
-					class="text-success" 
-					for="">	
-					Test				
-				</label> 
-				<input 
-					type="" 
-					id="" 
-					name="" 
-					placeholder=""
-					class="form-control  text-white bg-dark" 
-				/>
-			</div>
-			<div class="form-group">
-				<label
-					class="text-success" 
-					for="">	
-					Test				
-				</label> 
-				<input 
-					type="" 
-					id="" 
-					name="" 
-					placeholder=""
-					class="form-control  text-white bg-dark" 
-				/>
-			</div>
-			<div class="form-group">
-				<label
-					class="text-success" 
-					for="">
-					Test					
-				</label> 
-				<input 
-					type="" 
-					id="" 
-					name="" 
-					placeholder=""
-					class="form-control  text-white bg-dark" 
-				/>
-			</div>
-			<div class="form-group">		
-				<label
-					class="text-success" 
-					for="">
-					Test					
-				</label> 
-				<input 
-					type="" 
-					id="" 
-					name="" 
-					placeholder=""
-					class="form-control  text-white bg-dark" 
-				/>
-			</div>			
-			<div class="form-group">
-				<button 
-					class="btn btn-outline-warning my-2 my-sm-0 lemonText"
-					onclick="submit();">
-					Save
-				</button>
-			</div> -->
+				 -->
+				<div class="row text-warning"><h3>Preview</h3></div>
+				<div class="row" style="background-color:antiquewhite;opacity:0.7;">
+					<style>
+						.prettyprint ol.linenums>li {
+							list-style-type: decimal;
+						}
+						
+						li.L1, li.L3, li.L5, li.L7, li.L9 {
+							background: antiquewhite !important
+						}
+						
+						pre.prettyprint {
+							padding: 2px;
+							border: 0;
+						}
+					</style>
 		
-		
-<!-- 	</form> -->
+					<pre class="prettyprint lang-js linenums:1	">
+var _html = 'Here goes your html structure';
 
+$('#some-element').lightbox({
+  zIndex:99999,
+  background:'background-color:rgba(0,0,0,.8);',
+  time:300,
+  width:300,
+  type:'html',
+  contentHtml:_html
+});
+					</pre>
+			
+
+
+				</div>
+	
+				<script type="text/javascript">
+				jQuery(document).ready(
+						function()
+						{
+							prettyPrint();
+					  });
+				</script>
+				
+			
+			</div>
+			
+	

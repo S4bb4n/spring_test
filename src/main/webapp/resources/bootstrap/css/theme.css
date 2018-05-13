@@ -47,7 +47,7 @@ div {
 	border-top: 1px solid #2e4c27;
 }
 
-.table td {
+.table td, .table td pre {
 	color: #5f986c;
 }
 

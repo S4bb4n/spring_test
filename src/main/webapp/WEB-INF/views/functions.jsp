@@ -25,12 +25,12 @@
 		class="text-success">
 		Content 
 	</label> 
-	<input
-		type="text" 
+	<textarea
+		
 		id="content" 
 		required="required" 
 		name="content"
-		class="form-control  text-white bg-dark">
+		class="form-control  text-white bg-dark" ></textarea>
 </div>
 <div class="form-group">
 	<button class="btn btn-outline-warning my-2 my-sm-0 lemonText"
@@ -125,9 +125,9 @@
 							/* + response.data[i].id
 							+ " </td> <td> " */
 							+ response.data[i].functionName
-							+ " </td> <td> "
+							+ " </td> <td><pre> "
 							+ response.data[i].textFunction
-							+ " </td> <td> <a href='#' onclick= edit("
+							+ " </pre></td> <td> <a href='#' onclick= edit("
 							+ i
 							+ ");> Edit </a>  </td> </td> <td> <a href='#' onclick=delete_('"
 							+ response.data[i].functionName
