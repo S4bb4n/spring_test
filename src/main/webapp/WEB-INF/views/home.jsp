@@ -46,7 +46,7 @@
 				type : "GET",
 				dataType : "text",
 				success : function(response) {
-					console.log("page loaded", response);
+					//console.log("page loaded", response);
 					$('.content').html(response);
 				},
 				error : function(error) {

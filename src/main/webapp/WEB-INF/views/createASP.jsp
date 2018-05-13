@@ -18,6 +18,7 @@
 	<!-- <form action="" method="get"> -->
 		
 			<div class="form-group">
+			<aaa id="status" class="text-primary bg-orange" />
 				<div class="row text-warning">Section 1</div>
 				<div class="row bg-row-transparent">	
 					<div class="col-3">			
@@ -84,7 +85,110 @@
 						</select>
 					</div>		  
 					
-				</div>	
+				</div>
+					<div class="row text-warning"><h3>Preview</h3></div>
+				<div class="row" style="background-color:antiquewhite;opacity:0.7;">
+					<style>
+						.prettyprint ol.linenums>li {
+							list-style-type: decimal;
+						}
+						
+						li.L1, li.L3, li.L5, li.L7, li.L9 {
+							background: antiquewhite !important
+						}
+						
+						pre.prettyprint {
+							padding: 2px;
+							border: 0;
+						}
+					</style>
+		
+					<pre class="prettyprint lang-js" id="panel"></pre>
+<!-- var _html = 'Here goes your html structure';
+
+$('#some-element').lightbox({
+  zIndex:99999,
+  background:'background-color:rgba(0,0,0,.8);',
+  time:300,
+  width:300,
+  type:'html',
+  contentHtml:_html
+}); -->
+					
+			
+
+
+				</div>
+	
+				<script type="text/javascript">
+				
+				$("#<%=varbanca%>").on("change",function(){
+					if($("#<%=varbanca%>").val()=="SI"){
+						
+						 /* $("#panel").fadeIn("slow"); */						 
+						 	 load(); 
+						 	
+								
+						  
+					}else{
+						 $("#panel").fadeOut("slow");
+					}
+				});
+				
+				load=function(){
+					$.ajax({
+						url:"functions/list",
+						type:"POST",
+						/* data:{
+							functionName:name
+						}, */
+						success:function(response){
+							data = response.data;
+							$("#status").html(response.message).show().fadeOut(5000);
+							
+							for(i=0; i < data.length; i++){
+								//console.log($('#panel').contents().text())	;
+								 console.log($('#panel').contents().text().replace(/\s+/g, '').trim());
+								
+								console.log("response:\n "+response.data[i].textFunction.replace(/\s+/g, '').trim());
+								/*console.log($('#panel').contents().text().replace(/(?:\r\n|\r|\n)/g, '').indexOf(response.data[i].textFunction.replace(/(?:\r\n|\r|\n)/g, ''))); */ 
+								if($('#panel').contents().text().replace(/(?:\r\n|\r|\n)/g, '').trim() != 
+									response.data[i].textFunction.replace(/(?:\r\n|\r|\n\t)/g, '').trim()){
+								//if($('#panel').contents().text().indexOf($.parseText(response.data[i].textFunction)) < 0){
+									$("#panel").append("\n"+response.data[i].textFunction.trim());
+									$("#panel").addClass("linenums:1");
+									$('#panel').removeClass('prettyprinted');
+									
+								}else {
+									$("#status").html($('#panel').contents().text().replace(/(?:\r\n|\r|\n)/g, '')
+									+ " is equal to: " + 
+									response.data[i].textFunction.replace(/(?:\r\n|\r|\n)/g, '')
+									).show().fadeOut(5000); 
+								}
+								
+								
+								
+							}
+									
+							
+							
+							$("#panel").fadeIn("slow");			
+							prettyPrint();
+							
+						}
+					});
+				}
+				
+				
+				jQuery(document).ready(
+						function()
+						{
+							prettyPrint();
+					  });
+				</script>
+				
+			
+			</div>	
 				<!-- <div class="row text-warning">Section 2	</div>
 				<div class="row bg-row-transparent">	
 					<div class="col-3">			
@@ -289,49 +393,6 @@
 					
 				</div>	
 				 -->
-				<div class="row text-warning"><h3>Preview</h3></div>
-				<div class="row" style="background-color:antiquewhite;opacity:0.7;">
-					<style>
-						.prettyprint ol.linenums>li {
-							list-style-type: decimal;
-						}
-						
-						li.L1, li.L3, li.L5, li.L7, li.L9 {
-							background: antiquewhite !important
-						}
-						
-						pre.prettyprint {
-							padding: 2px;
-							border: 0;
-						}
-					</style>
-		
-					<pre class="prettyprint lang-js linenums:1	">
-var _html = 'Here goes your html structure';
-
-$('#some-element').lightbox({
-  zIndex:99999,
-  background:'background-color:rgba(0,0,0,.8);',
-  time:300,
-  width:300,
-  type:'html',
-  contentHtml:_html
-});
-					</pre>
 			
-
-
-				</div>
-	
-				<script type="text/javascript">
-				jQuery(document).ready(
-						function()
-						{
-							prettyPrint();
-					  });
-				</script>
-				
-			
-			</div>
 			
 	
