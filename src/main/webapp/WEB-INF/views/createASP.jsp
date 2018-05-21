@@ -135,6 +135,7 @@ $('#some-element').lightbox({
 					}
 				});
 				
+<<<<<<< Upstream, based on origin/spaMenu
 				load=function(){
 					$.ajax({
 						url:"functions/list",
@@ -144,6 +145,18 @@ $('#some-element').lightbox({
 						}, */
 						success:function(response){
 							data = response.data;
+=======
+				load=function(value){
+					$.ajax({
+						url:"functions/list",
+						type:"POST",
+						/* data:{
+							functionName:name
+						}, */
+						success:function(response){
+							data = response.data;
+							
+>>>>>>> ece1af2 prettyfy added
 							$("#status").html(response.message).show().fadeOut(5000);
 							
 							for(i=0; i < data.length; i++){

@@ -31,11 +31,11 @@ public class FunctionsImpl implements FunctionsDao {
 			if (!dir.exists()) {
 				dir.mkdir();
 			}
-			if (!file.exists()) {
+//			if (!file.exists()) {
 				mapper.writeValue(file, functions);
-			}else {
-				return false;
-			}
+//			}else {
+//				return false;
+//			}
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();
 			return false;

@@ -37,7 +37,8 @@
 		onclick="submit();">Save/Update</button>
 </div>
 <br>
-<table class="table" id="table">
+
+<table class="table" id="table" >
 	<thead class="bg-row-transparent text-success ">
 		<tr>
 			<!-- <th scope="col">#</th> -->
@@ -119,7 +120,7 @@
 				}
 				$('.tr').remove();
 				for(i=0; i < data.length; i++){
-					console.log(data[i]);	
+					console.log("form json file: " + data[i].textFunction);	
 					$("#table")
 					.append("<tr class='tr'> <td> "
 							/* + response.data[i].id

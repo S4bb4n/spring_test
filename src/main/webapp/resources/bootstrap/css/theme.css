@@ -47,14 +47,24 @@ div {
 	border-top: 1px solid #2e4c27;
 }
 
+<<<<<<< Upstream, based on origin/spaMenu
 .table td, .table td pre {
 	color: #5f986c;
 }
+=======
+.table td, .table td pre{
+	color: #5f986c;	
+	}
+>>>>>>> ece1af2 prettyfy added
 
 a {
 	color: #7cb2ea
 }
-
+table{
+	table-layout: fixed;
+  	width: 100%;
+  	white-space: nowrap;
+}
 nav {
 	margin: 5px;
 }
@@ -63,7 +73,12 @@ nav {
 	border-color:#ffc1079e !important;
 }
 
+/* pre {
+	width:90%;
+	overflow: auto;
+	background-color:black;
+	color: #5f986c;
+} */
 
-.opac{
-	opacity: 0.5;
-}
+
+​
