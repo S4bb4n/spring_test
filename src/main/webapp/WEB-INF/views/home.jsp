@@ -12,10 +12,13 @@
 <link
 	href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />"
 	rel="stylesheet">
-<link href="<c:url value="/resources/bootstrap/css/theme.css" />"
+	<link
+	href="<c:url value="/resources/bootstrap/css/dropdownCheckboxes.min.css" />"
 	rel="stylesheet">
 <link href="<c:url value="/resources/bootstrap/google-code-prettify/prettify.css" />"
-	rel="stylesheet">	
+	rel="stylesheet">
+<link href="<c:url value="/resources/bootstrap/css/theme.css" />"
+	rel="stylesheet">		
 <script
 	src="<c:url value="/resources/bootstrap/scripts/jquery.min.js" />"></script>
 
@@ -25,6 +28,8 @@
 	src="<c:url value="/resources/bootstrap/scripts/bootstrap.min.js" />"></script>
 <script
 	src="<c:url value="/resources/bootstrap/google-code-prettify/prettify.js" />"></script>
+<script
+	src="<c:url value="/resources/bootstrap/scripts/dropdownCheckboxes.min.js" />"></script>	
 	
 
 <script type="text/javascript">

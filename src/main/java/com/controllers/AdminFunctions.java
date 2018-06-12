@@ -33,41 +33,68 @@ public class AdminFunctions {
 		if (functionsService.saveOrUpdate(functions)) {
 			map.put("status", "200");
 			map.put("message", "Record saved successfully!");
+		} else {
+			map.put("status", "403");
+			map.put("message", "Record not saved!");
 		}
-		 else {
-		 map.put("status", "403");
-		 map.put("message", "Record not saved!");
-		 }
 
 		return map;
 	}
 
-	@RequestMapping(value = "/list",method = RequestMethod.POST)
+	@RequestMapping(value = "/list", method = RequestMethod.POST)
 	public @ResponseBody Map<String, Object> getAll(Functions functions) {
 		Map<String, Object> map = new HashMap<>();
-		List<Functions> list = functionsService.list();
 
-		if (list != null) {
-			map.put("status", "200");
-			map.put("message", "Data found");
-			map.put("data", list);
+		if (functions.getFunctionName() != null) {
+			Functions function = functionsService.getFunction(functions.getFunctionName());
+			if (function != null) {
+				map.put("status", "200");
+				map.put("message", "Function found");
+				map.put("data", function);
+			} else {
+				map.put("status", "403");
+				map.put("message", "Function not found!");
+			}
+
 		} else {
-			map.put("status", "404");
-			map.put("message", "Data not found");
+			List<Functions> list = functionsService.list();
 
+			if (list != null) {
+				map.put("status", "200");
+				map.put("message", "Data found");
+				map.put("data", list);
+			} else {
+				map.put("status", "404");
+				map.put("message", "Data not found");
+
+			}
 		}
 		return map;
 	}
-	
-	@RequestMapping(value="/delete",method=RequestMethod.POST)
-	public @ResponseBody Map<String,Object> delete(Functions functions){
-		Map<String,Object> map = new HashMap<>();
-		
-		if (functionsService.delete(functions)) {
-			map.put("status","200");
-			map.put("message", "Record deleted successfully!");			
+
+	@RequestMapping(value = "/templateFEA", method = RequestMethod.POST)
+	public @ResponseBody Map<String, Object> getTemplateFea() {
+		Map<String, Object> map = new HashMap<>();
+
+		StringBuilder builder = new StringBuilder();
+		builder = functionsService.getTemplateFEA();
+		if (builder != null) {
+			map.put("status", "200");
+			map.put("message", "Data template found!");
+			map.put("data", builder);
 		}
-		
+		return map;
+	}
+
+	@RequestMapping(value = "/delete", method = RequestMethod.POST)
+	public @ResponseBody Map<String, Object> delete(Functions functions) {
+		Map<String, Object> map = new HashMap<>();
+
+		if (functionsService.delete(functions)) {
+			map.put("status", "200");
+			map.put("message", "Record deleted successfully!");
+		}
+
 		return map;
 	}
 

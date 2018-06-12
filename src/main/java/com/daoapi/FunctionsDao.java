@@ -12,5 +12,9 @@ public interface FunctionsDao {
 	public List<Functions> list();
 
 	public boolean delete(Functions functions);
+	
+	public Functions getFunction(String fileName);
+	
+	public StringBuilder getTemplateFEA();
 
 }

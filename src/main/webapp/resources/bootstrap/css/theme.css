@@ -1,15 +1,14 @@
 html * {
 	font-family: monospace;
 	font-size: 12px !important;
-	
 }
 
-p{
-	color: antiquewhite !important;	
+p {
+	color: antiquewhite !important;
 }
 
-.bg-row-transparent{
-	background-color: #3a483d!important;	
+.bg-row-transparent {
+	background-color: #3a483d !important;
 }
 
 .text-success {
@@ -25,8 +24,8 @@ p{
 	border-color: #538448 !important;
 }
 
-.lemonText{
-	color:#83b18d!important;
+.lemonText {
+	color: #83b18d !important;
 }
 
 div {
@@ -47,30 +46,32 @@ div {
 	border-top: 1px solid #2e4c27;
 }
 
+.table td, .table td pre {
+	color: #5f986c;
+}
+
 
 .table td, .table td pre {
 	color: #5f986c;
 }
-=======
-.table td, .table td pre{
-	color: #5f986c;	
-	}
->>>>>>> ece1af2 prettyfy added
+
 
 a {
 	color: #7cb2ea
 }
-table{
+
+table {
 	table-layout: fixed;
-  	width: 100%;
-  	white-space: nowrap;
+	width: 100%;
+	white-space: nowrap;
 }
+
 nav {
 	margin: 5px;
 }
 
-.btn-outline-warning{
-	border-color:#ffc1079e !important;
+.btn-outline-warning {
+	border-color: #ffc1079e !important;
 }
 
 /* pre {
@@ -79,6 +80,15 @@ nav {
 	background-color:black;
 	color: #5f986c;
 } */
+.prettyprint ol.linenums>li {
+	list-style-type: decimal;
+	background: #d4d3a9 !important
+}
 
 
-​
+
+pre.prettyprint {
+	padding: 2px;
+	border: 0;
+	background: #d4d3a9 !important
+}

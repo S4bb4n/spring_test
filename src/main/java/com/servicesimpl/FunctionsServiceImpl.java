@@ -32,6 +32,22 @@ public class FunctionsServiceImpl implements FunctionsService{
 		
 		return functionsDao.delete(functions);
 	}
+
+	@Override
+	public Functions getFunction(String functionName) {
+		return functionsDao.getFunction(functionName);
+		
+	}
+
+	@Override
+	public StringBuilder getTemplateFEA() {
+	
+		return functionsDao.getTemplateFEA();
+	}
+	
+	
+	
+	
 	
 	
 

@@ -1,6 +1,9 @@
 package com.daoimpl;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,11 +34,11 @@ public class FunctionsImpl implements FunctionsDao {
 			if (!dir.exists()) {
 				dir.mkdir();
 			}
-//			if (!file.exists()) {
-				mapper.writeValue(file, functions);
-//			}else {
-//				return false;
-//			}
+			// if (!file.exists()) {
+			mapper.writeValue(file, functions);
+			// }else {
+			// return false;
+			// }
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();
 			return false;
@@ -52,43 +55,77 @@ public class FunctionsImpl implements FunctionsDao {
 
 	@Override
 	public List<Functions> list() {
-		
+
 		List<Functions> l = new ArrayList<>();
-		
-		for(File file: files("jsonFunctions/")) {
+
+		for (File file : files("jsonFunctions/")) {
 			try {
-				l.add(mapper.readValue(file,Functions.class));
+				l.add(mapper.readValue(file, Functions.class));
 			} catch (IOException e) {
 				e.printStackTrace();
 				return null;
 			}
 		}
 		return l;
-		
+
 	}
-	
+
 	public File[] files(String path) {
 		File dir = new File(path);
-		return dir.listFiles(new FilenameFilter() {			
+		return dir.listFiles(new FilenameFilter() {
 			@Override
 			public boolean accept(File dir, String name) {
 				return name.endsWith(".json");
 			}
-		} );
+		});
 	}
-	
 
 	@Override
 	public boolean delete(Functions functions) {
-		File file = new File("jsonFunctions/"+functions.getFunctionName()+"_function.json");
-		
-		if(file.delete()) {
-//			System.out.println("File: " + file.getAbsolutePath()+" exist and will be deleted");
+		File file = new File("jsonFunctions/" + functions.getFunctionName() + "_function.json");
+
+		if (file.delete()) {
+			// System.out.println("File: " + file.getAbsolutePath()+" exist and will be
+			// deleted");
 			return true;
 		}
-			
+
 		return false;
 	}
 
-	
+	@Override
+	public Functions getFunction(String fileName) {
+		File fileToFind = new File("jsonFunctions/" + fileName + "_function.json");
+		try {
+			return mapper.readValue(fileToFind, Functions.class);
+		} catch (IOException e) {
+			System.err.println("File: " + fileToFind + " does not exist!");
+			// e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	@Override
+	public StringBuilder getTemplateFEA() {
+		File templateFile = new File("aspTemplate/TemplateFEA.asp");
+		StringBuilder sb = new StringBuilder();
+		String line;
+		BufferedReader br;
+		try {
+			br = new BufferedReader(new FileReader(templateFile));
+			while ((line = br.readLine()) != null) {
+				sb.append(line);
+				sb.append("<br>");
+			}
+		} catch (FileNotFoundException e) {
+			System.err.println("File: " + templateFile.getAbsolutePath() + " not found!");
+		} catch (IOException e) {
+			System.err.println("I/O problem: " + templateFile.getAbsolutePath() + " !");
+			// e.printStackTrace();
+		}
+
+		return sb;
+	}
+
 }

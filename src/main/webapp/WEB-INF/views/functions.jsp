@@ -5,19 +5,57 @@
 <div class="form-group">
 	<aaa id="errorMsg" class="text-primary" />
 	<br> 
-	
-		
-	 <label 
-	 	for="name"
-		class="text-success">
-		Name 
-	 </label> 
-	 <input 
-	 	type="text" 
-	 	id="name"
-		required="required" 
-		name="function_name"
-		class="form-control text-white bg-dark">
+	<div class="row">
+		<div class="col-3">
+			  
+			 <input 
+			 	type="text" 
+			 	id="name"
+				required="required" 
+				name="function_name"
+				placeholder="Function Name"
+				class="form-control text-white bg-dark">
+		</div>
+		<div class="col-3">	
+			
+			 <input 
+			 	type="text" 
+			 	id="htmlID"
+				required="required" 
+				name="htmlID"
+				placeholder="HTML ID"
+				class="form-control text-white bg-dark">	
+		</div>
+		 <div class="col-2 dropdown cq-dropdown" data-name='statuses'>
+					  	<button class="form-control  dropdown-toggle text-warning bg-dark " type="button" id="dropdown1" data-toggle="dropdown" aria-expanded="true"> Input Type <span class="caret"></span> </button>
+					  	<ul  class="dropdown-menu  bg-row-transparent text-warning" aria-labelledby="dropdown1">
+						  	<li>
+						        <label class="radio-btn">
+						        <input type="radio" id="inputType" name="inputType"  value='ckType' >
+						          &nbsp;check box 
+						        </label>
+						     </li>
+						     <li>
+						        <label class="radio-btn">
+						        <input type="radio" id="inputType" name="inputType"  value='textType' >
+						          &nbsp;Text
+						        </label>
+						     </li>
+						     <li>
+						        <label class="radio-btn">
+						        <input type="radio" id="inputType" name="inputType"  value='selectType' >
+						          &nbsp;Select
+						        </label>
+						     </li>
+						    <li>
+						        <label class="radio-btn">
+						        <input type="radio" id="inputType" name="inputType"  value='radioType' >
+						          &nbsp;Radio
+						        </label>
+						     </li>						     
+						</ul>      
+					  </div>	
+	</div>		
 </div>
 <div class="form-group">
 	<label 
@@ -140,6 +178,9 @@
 	
 	$(document).ready(function(){
 		 load();
+		 prettyPrint();
+		 $('.cq-dropdown').dropdownCheckboxes();	
+						
 	 });
 
 	
